@@ -1,5 +1,5 @@
 # Tic-Tac-Toe Game
-This is a simple implementation of the classic Tic-Tac-Toe game
+This is a simple implementation of the classic Tic-Tac-Toe game, where two players take turns marking spaces in a 3x3 grid. The goal is to align three of their symbols (either "X" or "O") horizontally, vertically, or diagonally to win the game.
 
 ## Features
 - Single-player mode: Play with the logic implemented. 
