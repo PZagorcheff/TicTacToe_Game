@@ -4,11 +4,20 @@ This is a simple implementation of the classic Tic-Tac-Toe game, where two playe
 ## Features
 - Single-player mode: Play with the logic implemented. 
 - Interactive UI: Responsive design for a smooth gaming experience.
+- Win/Loss Detection: Automatically detects when a player wins or if the game ends in a draw.
+- Game Reset: Auto-start a new game after each round.
+- Cross-browser compatibility.
 
 ## Technologies Used
 - HTML5 for the structure of the game board.
 - CSS3 for layout and design.
 - JavaScript for the game logic and interaction handling.
+
+## How to Play
+Player 1 is assigned "O", and Player 2 is assigned "X".
+Players take turns clicking on the grid to place their symbols.
+The first player to align three of their symbols wins!
+The game auto-start immediately.
 
 ## Installation
 1. Clone the repository

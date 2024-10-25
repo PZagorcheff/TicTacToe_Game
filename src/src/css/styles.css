@@ -1,8 +1,9 @@
-/* This container includes our table and our canvas */
+/* Start of container which includes the table and a canvas */
 .center-container {
     width: 608px;
     margin: 0 auto;
     margin-top: 50px;
+	background-color: #d5ba8c;
 }
 
 table {
@@ -20,9 +21,10 @@ td {
 
 canvas {
     position: absolute;
-    z-index: 10; /* The canvas is over the top of our table. */
-    pointer-events: none; /* Our canvas is invisible. */
+    z-index: 10; /* The canvas is over the top of the table. */
+    pointer-events: none; /* The canvas is invisible. */
 }
+/* End of container which includes the table and a canvas */
 
 h1 {
     text-align: center;
