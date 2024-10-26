@@ -15,7 +15,13 @@ to keep trying if a square is selected already
 
 - function checkWinConditions() 				# Checks if there is a tie and win
 
-- function drawWinLine() 						# Draws win line
+- function disableClick() 						# This function makes our body element temporary unclickable
 
-- function resetGame()           				# Resets the game in a tie or a win
+- function audio()								# Audio path
+
+- function drawWinLine() 						# Draws win line
+-- function animateLineDrawing() 				# Animates win line on the canvas
+-- function clear() 							# Clears our canvas after our win line is drawn
+
+- function resetGame() 							# Resets the game in a tie or a win
   
