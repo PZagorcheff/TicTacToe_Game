@@ -9,7 +9,13 @@
 
 ## JS Functions Description
 - function placeXOrO() 							# Placement of an X or O in a square
+-- function computersTurn() 					# Computer's turn - a random square being selected
+--- Condition which allows our while loop 
+to keep trying if a square is selected already
 
-- function checkWinConditions() 				# Checks if there is a tie or win
+- function checkWinConditions() 				# Checks if there is a tie and win
 
 - function drawWinLine() 						# Draws win line
+
+- function resetGame()           				# Resets the game in a tie or a win
+  
