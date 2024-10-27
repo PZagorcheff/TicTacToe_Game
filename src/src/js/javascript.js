@@ -14,6 +14,7 @@ function placeXOrO(squareNumber) {
             select.style.backgroundImage = 'url("assets/images/o.png")';
         }
         selectedSquares.push(squareNumber + activePlayer);
+		checkWinConditions(); 
 		
         //Changing the active player.
         if (activePlayer === 'X') {
@@ -25,15 +26,17 @@ function placeXOrO(squareNumber) {
         //Plays placement sound.
         audio('./assets/audio/turn_place.wav');
         if (activePlayer === 'O') {
-			...
+			disableClick();
+            setTimeout(function() {computersTurn(); }, 1000);
         }
         return true;
     }
-    
+    //Random square selected.
     function computersTurn() {
         let success = false;
         let pickASquare;
-        
+		
+        //While loop checks if a square is selected.
         while(!success) {
             pickASquare = String(Math.floor(Math.random() * 9));
             if (placeXOrO(pickASquare)) {
@@ -44,6 +47,7 @@ function placeXOrO(squareNumber) {
     }
 }
 
+//Мakes our body element temporary unclickable.
 function disableClick() {
     body.style.pointerEvents = 'none';
     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
