@@ -43,3 +43,8 @@ function placeXOrO(squareNumber) {
         }
     }
 }
+
+function disableClick() {
+    body.style.pointerEvents = 'none';
+    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
+}
