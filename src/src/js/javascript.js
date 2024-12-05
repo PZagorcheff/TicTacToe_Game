@@ -71,12 +71,13 @@ function checkWinConditions() {
         setTimeout(function () { resetGame(); }, 1000);					
     }
 	
+	//This function checks if an array includes 3 strings. It is used to check for each win condition.
 	function arrayIncludes(squareA, squareB, squareC) {
         const a = selectedSquares.includes(squareA);
         const b = selectedSquares.includes(squareB);
         const c = selectedSquares.includes(squareC);
         
-        if (a === true && b === true && c === true) {return true; }
+        if (a === true && b === true && c === true) {return true; } // If the 3 variables we pass are all included in our array true is retutned and our else if condition executes the drawWinLine function.
     }
 }
 
