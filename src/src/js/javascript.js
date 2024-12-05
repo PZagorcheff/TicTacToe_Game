@@ -86,3 +86,8 @@ function disableClick() {
     body.style.pointerEvents = 'none';
     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
 }
+
+function audio(audioURL) {
+    let audio = new Audio(audioURL);			//Create a new audio object.
+    audio.play();
+}
