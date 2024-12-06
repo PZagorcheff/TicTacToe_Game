@@ -128,4 +128,11 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
+
+    function clear() {
+
+        const animationLoop = requestAnimationFrame(clear);
+        c.clearRect(0, 0, 400, 400);
+        cancelAnimationFrame(animationLoop);
+    }
 }
