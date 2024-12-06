@@ -92,6 +92,7 @@ function audio(audioURL) {
     audio.play();
 }
 
+//This function utiliezes html canvas to draw win lines.
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     
     const canvas = document.getElementById('win-lines');
@@ -104,7 +105,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         x = x1,
         y = y1;
 		
-    function animateLineDrawing() {
+    //This function interacts with canvas
+	function animateLineDrawing() {
         
         const animationLoop = requestAnimationFrame(animateLineDrawing);
 
@@ -116,7 +118,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         c.strokeStyle = 'rgba(70, 255, 33, .8)';
         c.stroke();
 
-        if (x1 <= x2 && y1 <= y2) {
+        //Checks if the player has reached the endpoint.
+		if (x1 <= x2 && y1 <= y2) {
             if (x < x2) { x += 10; }
             if (y < y2) {y += 10; }
             if (x >= x2 && y >= y2) { cancelAnimationFrame(animationLoop); }
@@ -128,7 +131,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
-
+	//This function clears the canvas after a win line is drawn.
     function clear() {
 
         const animationLoop = requestAnimationFrame(clear);
