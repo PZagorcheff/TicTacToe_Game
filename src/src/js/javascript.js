@@ -138,6 +138,11 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         c.clearRect(0, 0, 608, 608);
         cancelAnimationFrame(animationLoop);
     }
+	
+	disableClick();
+    audio('./assets/audio/Win_Game.wav');
+    animateLineDrawing();
+    setTimeout(function() { clear(); resetGame(); }, 1000);		//Waits 1 second. Then, clear canvas, reset game and allows clicking again.
 }
 
 //This function resets the game in a tie or a win.
